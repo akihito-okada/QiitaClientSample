@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/Documents/workspace/QiitaClientSample2" />
-            <option value="$USER_HOME$/Documents/workspace/QiitaClientSample2/app" />
+            <option value="$USER_HOME$/Documents/workspace/QiitaClientSample/QiitaClientSample" />
+            <option value="$USER_HOME$/Documents/workspace/QiitaClientSample/QiitaClientSample/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
