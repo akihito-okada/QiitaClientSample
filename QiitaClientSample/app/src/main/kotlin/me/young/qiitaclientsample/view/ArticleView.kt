@@ -34,6 +34,5 @@ class ArticleView : FrameLayout {
         titleTextView.text = artcle.title;
         userNameTextView.text = artcle.user.name
         profileImageView.setBackgroundColor(Color.RED)
-
     }
 }

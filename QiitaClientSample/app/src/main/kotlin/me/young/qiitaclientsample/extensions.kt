@@ -1,5 +1,6 @@
 package me.young.qiitaclientsample
 
+import android.app.Activity
 import android.support.annotation.IdRes
 import android.view.View
 
@@ -8,5 +9,9 @@ import android.view.View
  */
 
 fun <T : View> View.bindView(@IdRes id: Int): Lazy<T> = lazy {
+    findViewById(id) as T
+}
+
+fun <T : View> Activity.bindView(@IdRes id: Int): Lazy<T> = lazy{
     findViewById(id) as T
 }
