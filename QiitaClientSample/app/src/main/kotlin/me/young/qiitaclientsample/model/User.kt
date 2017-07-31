@@ -9,7 +9,7 @@ import android.os.Parcelable
 
 data class User(val id: String,
                 val name: String,
-                val profileImageURL: String) : Parcelable {
+                val profileImageUrl: String) : Parcelable {
 
     constructor(parcel: Parcel) : this(
             parcel.readString(),
@@ -20,7 +20,7 @@ data class User(val id: String,
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(id)
         parcel.writeString(name)
-        parcel.writeString(profileImageURL)
+        parcel.writeString(profileImageUrl ?: "")
     }
 
     override fun describeContents(): Int {

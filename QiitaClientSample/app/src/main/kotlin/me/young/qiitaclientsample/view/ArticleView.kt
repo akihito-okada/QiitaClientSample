@@ -1,12 +1,12 @@
 package me.young.qiitaclientsample.view
 
 import android.content.Context
-import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import me.young.qiitaclientsample.R
 import me.young.qiitaclientsample.bindView
 import me.young.qiitaclientsample.model.Article
@@ -33,6 +33,6 @@ class ArticleView : FrameLayout {
     fun setArticle(artcle: Article) {
         titleTextView.text = artcle.title;
         userNameTextView.text = artcle.user.name
-        profileImageView.setBackgroundColor(Color.RED)
+        Glide.with(context).load(artcle.user.profileImageUrl).into(profileImageView)
     }
 }

@@ -20,12 +20,10 @@ data class Article(val id: String,
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.run {
-            writeString(id)
-            writeString(title)
-            writeString(url)
-            writeParcelable(user, flags)
-        }
+        parcel.writeString(id)
+        parcel.writeString(title)
+        parcel.writeString(url)
+        parcel.writeParcelable(user, flags)
     }
 
     override fun describeContents(): Int {
